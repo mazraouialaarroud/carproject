@@ -2,7 +2,7 @@
 	Countdown
 	-------------------------------------------------------------------*/
  
-	var endDate = "march 22, 2017";
+	var endDate = "june 1, 2020";
 	$('.countdown').countdown({
 	  date: endDate,
 	  render: function(data) {
