@@ -16,11 +16,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-echo "<script>alert('Registration successfull. Now you can login');</script>";
+echo "<script>alert('Registration successfull !!. Now you can login');</script>";
 }
 else 
 {
-echo "<script>alert('Something went wrong. Please try again');</script>";
+echo "<script>alert('Something went wrong ! Please try again');</script>";
 }
 }
 
