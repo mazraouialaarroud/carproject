@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 11 juin 2020 à 18:28
+-- Généré le :  jeu. 11 juin 2020 à 18:58
 -- Version du serveur :  10.1.38-MariaDB
 -- Version de PHP :  7.3.2
 
@@ -205,10 +205,8 @@ CREATE TABLE `tblusers` (
 --
 
 INSERT INTO `tblusers` (`id`, `FullName`, `EmailId`, `Password`, `ContactNo`, `dob`, `Address`, `City`, `Country`, `RegDate`, `UpdationDate`) VALUES
-(1, 'Anuj Kumar', 'demo@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2147483647', NULL, NULL, NULL, NULL, '2017-06-17 19:59:27', '2017-06-26 21:02:58'),
-(2, 'AK', 'anuj@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '8285703354', NULL, NULL, NULL, NULL, '2017-06-17 20:00:49', '2017-06-26 21:03:09'),
-(3, 'Anuj Kumar', 'webhostingamigo@gmail.com', 'f09df7868d52e12bba658982dbd79821', '09999857868', '03/02/1990', 'New Delhi', 'New Delhi', 'New Delhi', '2017-06-17 20:01:43', '2017-06-17 21:07:41'),
-(4, 'user1', 'test@gmail.com', '5c428d8875d2948607f3e3fe134d71b4', '9999857868', '', 'Maroc', 'Marrakech', 'Maroc', '2017-06-17 20:03:36', '2020-06-08 20:49:37');
+(4, 'user1', 'test@gmail.com', '5c428d8875d2948607f3e3fe134d71b4', '9999857868', '', 'Maroc', 'Marrakech', 'Maroc', '2017-06-17 20:03:36', '2020-06-08 20:49:37'),
+(5, 'user2', 'demo@gmail.com', '88117d0fa10182e2d0cf81c3affe9715', '6251958489', '12/05/1950', 'maroc marrakech', 'Marrakech', 'Maroc', '2020-06-11 16:43:20', '2020-06-11 16:57:22');
 
 -- --------------------------------------------------------
 
@@ -365,7 +363,7 @@ ALTER TABLE `tbltestimonial`
 -- AUTO_INCREMENT pour la table `tblusers`
 --
 ALTER TABLE `tblusers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `tblvehicles`
