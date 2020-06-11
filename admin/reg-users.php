@@ -33,7 +33,7 @@ $msg="Page data updated  successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage testimonials   </title>
+	<title>CarProject | listes des Uttilisateurs </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -83,11 +83,11 @@ $msg="Page data updated  successfully";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Registered Users</h2>
+						<h2 class="page-title">Listes des Uttilisateurs</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Reg Users</div>
+							<div class="panel-heading">les Uttilisateurs enregistre</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -95,28 +95,28 @@ $msg="Page data updated  successfully";
 									<thead>
 										<tr>
 										<th>#</th>
-												<th> Name</th>
-											<th>Email </th>
-											<th>Contact no</th>
-										<th>DOB</th>
+										<th>Nom</th>
+										<th>Email </th>
+										<th>Contact no(Tel)</th>
+										<th>Date de naissance</th>
 										<th>Address</th>
-										<th>City</th>
-										<th>Country</th>
-										<th>Reg Date</th>
+										<th>Ville</th>
+										<th>Pay</th>
+										<th>Date D'ajoue</th>
 										
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-											<th> Name</th>
-											<th>Email </th>
-											<th>Contact no</th>
-										<th>DOB</th>
+										<th>Nom</th>
+										<th>Email </th>
+										<th>Contact no(Tel)</th>
+										<th>Date de naissance</th>
 										<th>Address</th>
-										<th>City</th>
-										<th>Country</th>
-										<th>Reg Date</th>
+										<th>Ville</th>
+										<th>Pay</th>
+										<th>Date D'ajoue</th>
 										</tr>
 										</tr>
 									</tfoot>

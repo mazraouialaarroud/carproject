@@ -73,7 +73,7 @@ $msg="Data updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Edit Vehicle Info</title>
+	<title>CarProject | Admin Misajour voiture</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -121,7 +121,7 @@ $msg="Data updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Edit Vehicle</h2>
+						<h2 class="page-title">Misajour Voiture</h2>
 
 						<div class="row">
 							<div class="col-md-12">
@@ -144,11 +144,11 @@ foreach($results as $result)
 
 <form method="post" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehicle Title<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Titre de Voiture<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="vehicletitle" class="form-control" value="<?php echo htmlentities($result->VehiclesTitle)?>" required>
 </div>
-<label class="col-sm-2 control-label">Select Brand<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Marque<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="brandname" required>
 <option value="<?php echo htmlentities($result->bid);?>"><?php echo htmlentities($bdname=$result->BrandName); ?> </option>
@@ -175,18 +175,18 @@ continue;
 											
 <div class="hr-dashed"></div>
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Présentation sur la vioture<span style="color:red">*</span></label>
 <div class="col-sm-10">
 <textarea class="form-control" name="vehicalorcview" rows="3" required><?php echo htmlentities($result->VehiclesOverview);?></textarea>
 </div>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Price Per Day(in USD)<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Prix ​​par jour (en Dh)<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="priceperday" class="form-control" value="<?php echo htmlentities($result->PricePerDay);?>" required>
 </div>
-<label class="col-sm-2 control-label">Select Fuel Type<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Sélectionnez le type de carburant<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="fueltype" required>
 <option value="<?php echo htmlentities($result->FuelType);?>"> <?php echo htmlentities($result->FuelType);?> </option>
@@ -200,11 +200,11 @@ continue;
 
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Model Year<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Model(Annee)<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="modelyear" class="form-control" value="<?php echo htmlentities($result->ModelYear);?>" required>
 </div>
-<label class="col-sm-2 control-label">Seating Capacity<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Nombre de places<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity);?>" required>
 </div>
@@ -212,7 +212,7 @@ continue;
 <div class="hr-dashed"></div>								
 <div class="form-group">
 <div class="col-sm-12">
-<h4><b>Vehicle Images</b></h4>
+<h4><i class="fa fa-car"></i> <b>Images de la Vioture</b></h4>
 </div>
 </div>
 
@@ -456,7 +456,7 @@ echo htmlentities("File not available");
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-2" >
 													
-<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Save changes</button>
+<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Submit</button>
 												</div>
 											</div>
 

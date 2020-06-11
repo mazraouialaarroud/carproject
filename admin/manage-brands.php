@@ -83,11 +83,11 @@ $msg="Page data updated  successfully";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Brands</h2>
+						<h2 class="page-title">Gestion des Marques</h2>
 
-						<!-- Zero Configuration Table -->
+					
 						<div class="panel panel-default">
-							<div class="panel-heading">Listed  Brands</div>
+							<div class="panel-heading">Liste des Marque</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -95,9 +95,9 @@ $msg="Page data updated  successfully";
 									<thead>
 										<tr>
 										<th>#</th>
-												<th>Brand Name</th>
-											<th>Creation Date</th>
-											<th>Updation date</th>
+												<th>Nom de la Marque</th>
+											<th>Date de Creation</th>
+											<th>Date de Misajour</th>
 										
 											<th>Action</th>
 										</tr>
@@ -105,9 +105,9 @@ $msg="Page data updated  successfully";
 									<tfoot>
 										<tr>
 										<th>#</th>
-											<th>Brand Name</th>
-											<th>Creation Date</th>
-											<th>Updation date</th>
+											<th>Nom de la Marque</th>
+											<th>Date de Creation</th>
+											<th>Date de Misajour</th>
 										
 											<th>Action</th>
 										</tr>
@@ -130,7 +130,7 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->CreationDate);?></td>
 											<td><?php echo htmlentities($result->UpdationDate);?></td>
 <td><a href="edit-brand.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
-<a href="manage-brands.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
+<a href="manage-brands.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i style="color:red !important" class="fa fa-close"></i></a></td>
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
 										
@@ -151,7 +151,7 @@ foreach($results as $result)
 		</div>
 	</div>
 
-	<!-- Loading Scripts -->
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

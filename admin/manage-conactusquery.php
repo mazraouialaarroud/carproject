@@ -35,7 +35,7 @@ $msg="Testimonial Successfully Inacrive";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage Queries   </title>
+	<title>CarProject |Admin Gestion des Contates </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -85,11 +85,11 @@ $msg="Testimonial Successfully Inacrive";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Contact Us Queries</h2>
+						<h2 class="page-title">Gestion Contactez Nous</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">User queries</div>
+							<div class="panel-heading">Listes des Contact</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -97,23 +97,23 @@ $msg="Testimonial Successfully Inacrive";
 									<thead>
 										<tr>
 										<th>#</th>
-											<th>Name</th>
+											<th>Nom</th>
 											<th>Email</th>
-											<th>Contact No</th>
+											<th>Contact No(Tel)</th>
 											<th>Message</th>
-											<th>Posting date</th>
-											<th>Action</th>
+											<th>Date d'ajoue</th>
+											
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-											<th>Name</th>
+										<th>Nom</th>
 											<th>Email</th>
-											<th>Contact No</th>
+											<th>Contact No(Tel)</th>
 											<th>Message</th>
-											<th>Posting date</th>
-											<th>Action</th>
+											<th>Date d'ajoue</th>
+											
 										</tr>
 										</tr>
 									</tfoot>
@@ -137,7 +137,7 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->PostingDate);?></td>
 																<?php if($result->status==1)
 {
-	?><td>Read</td>
+	?>
 <?php } else {?>
 
 <td><a href="manage-conactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Pending</a>

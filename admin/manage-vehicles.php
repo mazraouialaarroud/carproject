@@ -32,7 +32,7 @@ $msg="Vehicle  record deleted successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage Vehicles   </title>
+	<title>CarPriject |Admin Gestion des Voitures  </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -82,11 +82,12 @@ $msg="Vehicle  record deleted successfully";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Vehicles</h2>
+						<h2 class="page-title">Gestion des Voitures</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Vehicle Details</div>
+							<div class="panel-heading">
+Les détails sur les Voitures</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -94,22 +95,22 @@ $msg="Vehicle  record deleted successfully";
 									<thead>
 										<tr>
 										<th>#</th>
-											<th>Vehicle Title</th>
-											<th>Brand </th>
-											<th>Price Per day</th>
-											<th>Fuel Type</th>
-											<th>Model Year</th>
+											<th>Titre de Voiture</th>
+											<th>Marque </th>
+											<th>Prix par jour</th>
+											<th>Type de carburant</th>
+											<th>Model</th>
 											<th>Action</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-										<th>Vehicle Title</th>
-											<th>Brand </th>
-											<th>Price Per day</th>
-											<th>Fuel Type</th>
-											<th>Model Year</th>
+										<th>Titre de Voiture</th>
+											<th>Marque</th>
+											<th>Prix par jou</th>
+											<th>Type de carburant</th>
+											<th>Model</th>
 											<th>Action</th>
 										</tr>
 										</tr>
@@ -133,7 +134,7 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->FuelType);?></td>
 												<td><?php echo htmlentities($result->ModelYear);?></td>
 		<td><a href="edit-vehicle.php?id=<?php echo $result->id;?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
-<a href="manage-vehicles.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
+<a href="manage-vehicles.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i style="color: red !Important;" class="fa fa-close"></i></a></td>
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
 										
